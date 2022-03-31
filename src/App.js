@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import styled, { ThemeProvider } from 'styled-components'
+
+import GlobalStyle from './styles/global'
+import colors from './styles/themes/variables'
+
+import Loading from './components/Loading'
+
+const Header = lazy(() => import('./components/Header.jsx'))
+const Footer = lazy(() => import('./components/Footer.jsx'))
+const Home = lazy(() => import('./pages/Home.jsx'))
+const Countries = lazy(() => import('./pages/Countries.jsx'))
+const Details = lazy(() => import('./pages/Details.jsx'))
+const About = lazy(() => import('./pages/About'))
+
+const Loader = styled.div`
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={colors}>
+      <Router>
+        <Suspense
+          fallback={
+            <Loader>
+              <Loading />
+            </Loader>
+          }
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <Header />
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route path='/countries' element={<Countries />} />
+            <Route path='/details/:name' element={<Details />} />
+            <Route path='/about' element={<About />} />
+          </Routes>
+          <Footer />
+        </Suspense>
+        <GlobalStyle />
+      </Router>
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
