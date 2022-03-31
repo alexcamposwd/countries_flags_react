@@ -27,7 +27,7 @@ Aplicação fornece informações basicas sobre os países e a bandeira de cada 
 - Git e GitHub
 - Deploy Heroku.
 
-https://pokedex-provu.herokuapp.com/
+https://countries-react-wd.herokuapp.com/
 
 ### License/Licença do Projeto
 [MIT License](./LICENSE) © ![alexcamposwd](https://img.shields.io/badge/-alexcamposwd-blue?&style=flat)
