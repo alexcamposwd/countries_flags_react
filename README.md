@@ -27,7 +27,7 @@ Aplicação fornece informações basicas sobre os países e a bandeira de cada 
 - Git e GitHub
 - Deploy Heroku.
 
-https://countries-react-wd.herokuapp.com/
+https://country-react-wd.netlify.app/
 
 ### License/Licença do Projeto
 [MIT License](./LICENSE) © ![alexcamposwd](https://img.shields.io/badge/-alexcamposwd-blue?&style=flat)
