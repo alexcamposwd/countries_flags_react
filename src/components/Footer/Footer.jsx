@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import * as S from '../styles/components/Footer'
+import React from 'react'
+import * as S from './Footer'
 
 function Footer() {
   return (
@@ -11,4 +11,4 @@ function Footer() {
   )
 }
 
-export default memo(Footer)
+export default Footer

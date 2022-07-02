@@ -1,13 +1,13 @@
-import React, { useState, useEffect, memo } from 'react'
-import * as S from '../styles/components/List'
+import React, { useState, useEffect } from 'react'
+import * as S from './List'
 
-import { api } from '../services/api'
+import { api } from '../../services/api'
 
-import Card from './Card'
-import Search from './Search'
-import Select from './Select'
-import Loading from './Loading'
-import Pagination from './Pagination'
+import Card from '../Card'
+import Search from '../Search'
+import Select from '../Select'
+import Loading from '../Loading'
+import Pagination from '../Pagination'
 
 function List() {
   const [loading, setLoading] = useState(true)
@@ -125,4 +125,4 @@ function List() {
   )
 }
 
-export default memo(List)
+export default List

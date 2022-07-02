@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import * as S from '../styles/components/Search'
+import React from 'react'
+import * as S from './Search'
 
 function Search({ type, name, id, value, placeholder, handleOnChange }) {
   return (
@@ -16,4 +16,4 @@ function Search({ type, name, id, value, placeholder, handleOnChange }) {
   )
 }
 
-export default memo(Search)
+export default Search

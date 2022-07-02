@@ -7,11 +7,11 @@ import colors from './styles/themes/variables'
 
 import Loading from './components/Loading'
 
-const Header = lazy(() => import('./components/Header.jsx'))
-const Footer = lazy(() => import('./components/Footer.jsx'))
-const Home = lazy(() => import('./pages/Home.jsx'))
-const Countries = lazy(() => import('./pages/Countries.jsx'))
-const Details = lazy(() => import('./pages/Details.jsx'))
+const Header = lazy(() => import('./components/Header'))
+const Footer = lazy(() => import('./components/Footer'))
+const Home = lazy(() => import('./pages/Home'))
+const Countries = lazy(() => import('./pages/Countries'))
+const Details = lazy(() => import('./pages/Details'))
 const About = lazy(() => import('./pages/About'))
 
 const Loader = styled.div`

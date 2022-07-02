@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import * as S from '../styles/pages/About'
+import React from 'react'
+import * as S from './About'
 
 function About() {
   return (
@@ -33,4 +33,4 @@ function About() {
   )
 }
 
-export default memo(About)
+export default About

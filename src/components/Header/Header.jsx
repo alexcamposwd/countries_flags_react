@@ -1,6 +1,6 @@
-import React, { memo } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
-import * as S from '../styles/components/Header'
+import * as S from './Header'
 
 function Header() {
   return (
@@ -27,4 +27,4 @@ function Header() {
   )
 }
 
-export default memo(Header)
+export default Header

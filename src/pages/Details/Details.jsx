@@ -1,10 +1,10 @@
-import React, { useState, useEffect, memo } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
-import { api } from '../services/api.js'
-import * as S from '../styles/pages/Details'
+import { api } from '../../services/api.js'
+import * as S from './Details'
 
-import Loading from '../components/Loading'
+import Loading from '../../components/Loading'
 
 function Details() {
   const { name } = useParams()
@@ -78,4 +78,4 @@ function Details() {
   )
 }
 
-export default memo(Details)
+export default Details

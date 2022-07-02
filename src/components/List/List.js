@@ -17,6 +17,7 @@ export const CardsGroup = styled.section `
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 75vh;
   min-height: 550px;
   justify-content: center;
   align-items: center;

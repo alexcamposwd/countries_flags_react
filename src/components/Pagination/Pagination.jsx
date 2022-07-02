@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import * as S from '../styles/components/Pagination'
+import React from 'react'
+import * as S from './Pagination'
 
 function Pagination({ pages, setCurrentPage, itemsPerPage, setItemsPerPage }) {
   return (
@@ -32,4 +32,4 @@ function Pagination({ pages, setCurrentPage, itemsPerPage, setItemsPerPage }) {
   )
 }
 
-export default memo(Pagination)
+export default Pagination

@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import * as S from '../styles/components/Select'
+import React from 'react'
+import * as S from './Select'
 
 function Select({ key, text, name, value, handleOnChange }) {
   return (
@@ -27,4 +27,4 @@ function Select({ key, text, name, value, handleOnChange }) {
   )
 }
 
-export default memo(Select)
+export default Select

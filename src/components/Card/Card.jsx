@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import { Link } from 'react-router-dom'
-import * as S from '../styles/components/Card'
+import * as S from './Card'
 
 function Card({ country, img, name, region, handleChange }) {
   return (
